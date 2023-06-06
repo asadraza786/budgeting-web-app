@@ -39,7 +39,7 @@ function deleteExpense(index) {
 
 function showBudget() {
   var budgetValue = document.getElementById('valbudget');
-  budgetValue.textContent = 'Monthly Budget: $' + monthlyBudget;
+  budgetValue.textContent = 'Your Budget: PKR ' + monthlyBudget;
 }
 
 function showExpenses() {
@@ -114,7 +114,7 @@ function calculateRemainingBudget() {
   }, 0);
   var remainingBudget = monthlyBudget - totalExpenses;
 
-  remainingBudgetValue.textContent = 'Your Remaining Budget: $' + remainingBudget;
+  remainingBudgetValue.textContent = 'Your Remaining Budget: PKR ' + remainingBudget;
 
   if (remainingBudget < 0) {
     remainingBudgetValue.style.color = 'red';
