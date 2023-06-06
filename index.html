@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeting web application </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+  
+<body>
+  <h1 style="text-align: center;">BUDGETING WEB AAP</h1>
+
+  <h3>Add Your Budget Here</h3>
+  <input type="number" id="budgetInp" placeholder="What is Your Budget?">
+  <button onclick="budgetAdd()">Set Your Budget</button>
+
+  <h2>Add Expense</h2>
+  <input type="text" id="descriptionInp" placeholder="Expense description">
+  <input type="number" id="amountInp" placeholder="Your Expense amount?">
+  <input type="date" id="dateInp">
+  <button onclick="addExpense()"> Add Your Expenses</button>
+
+  <h2>Budget and Expenses</h2>
+  <p id="valbudget"></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th>Amount (PKR) of the expense</th>
+        <th>Date</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="tableExpense"></tbody>
+  </table>
+
+  <h2>Here is Your Remaining Budget</h2>
+  <p id="budgetBaqaya"></p>
+
+
+</body>
+</body>
+</html>
